@@ -1,0 +1,5 @@
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMessagePatternService\DuplexMessagePatternService\bin\Debug\DuplexMessagePatternService.dll
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMessagePatternService\DuplexMessagePatternService\bin\Debug\DuplexMessagePatternService.pdb
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMessagePatternService\DuplexMessagePatternService\obj\Debug\DuplexMessagePatternService.csprojAssemblyReference.cache
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMessagePatternService\DuplexMessagePatternService\obj\Debug\DuplexMessagePatternService.dll
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMessagePatternService\DuplexMessagePatternService\obj\Debug\DuplexMessagePatternService.pdb

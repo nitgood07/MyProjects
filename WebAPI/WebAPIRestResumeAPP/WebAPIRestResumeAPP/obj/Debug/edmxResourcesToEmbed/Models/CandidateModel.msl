@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyDatabaseModelStoreContainer" CdmEntityContainer="Candidate">
+    <EntitySetMapping Name="CandidateResumes">
+      <EntityTypeMapping TypeName="MyDatabaseModel.CandidateResume">
+        <MappingFragment StoreEntitySet="CandidateResume">
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="Trainings" ColumnName="Trainings" />
+          <ScalarProperty Name="Awards" ColumnName="Awards" />
+          <ScalarProperty Name="Projects" ColumnName="Projects" />
+          <ScalarProperty Name="Education" ColumnName="Education" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+          <ScalarProperty Name="JobSummary" ColumnName="JobSummary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,9 @@
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMessagePatternService\DuplexHost\bin\Debug\DuplexHost.exe.config
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMessagePatternService\DuplexHost\bin\Debug\DuplexHost.exe
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMessagePatternService\DuplexHost\bin\Debug\DuplexHost.pdb
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMessagePatternService\DuplexHost\bin\Debug\DuplexMessagePatternService.dll
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMessagePatternService\DuplexHost\bin\Debug\DuplexMessagePatternService.pdb
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMessagePatternService\DuplexHost\obj\Debug\DuplexHost.csprojAssemblyReference.cache
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMessagePatternService\DuplexHost\obj\Debug\DuplexHost.csproj.CopyComplete
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMessagePatternService\DuplexHost\obj\Debug\DuplexHost.exe
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMessagePatternService\DuplexHost\obj\Debug\DuplexHost.pdb

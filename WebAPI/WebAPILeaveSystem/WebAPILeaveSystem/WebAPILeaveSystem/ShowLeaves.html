@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-3.3.1.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            var ulLeaves = $('#ulLeaves');
+
+            $('#btn').click(function () {
+                //empty previous data
+                ulLeaves.empty();
+                var username = $('#txtUserName').val();
+                var password = $('#txtUserName').val();
+
+                //invoke service
+                $.ajax({
+                    type: 'GET',
+                    url: 'api/Leaves',
+                    dataType: 'json',
+                    headers: {
+                        'Authorization': 'Basic ' + btoa(username + ':' + password)
+                    },
+                    success: function (data) {
+                        $.each(data, function (index,val) {
+                            var empName = val.employeeName;
+                            var empEmail = val.employeeEmail;
+                            var managerName = val.managerName;
+                            var managerEmail = val.managerEmail;
+                            var fromDate = val.fromDate;
+                            var toDate = val.toDate;
+                            var approvalStatus = val.approvalStatus;
+
+                            var myrow = empName + '  ' + empEmail + '  ' + managerName + '  ' + managerEmail + '  ' + fromDate + '  ' + toDate + '  ' + approvalStatus;
+
+                            ulLeaves.append('<li>' + myrow + '</li>');
+                        })
+                    },
+                    complete: function (jqXHR) {
+                        //if request fails display red color message
+                        if (jqXHR.state == '401') {
+                            //empty list and display unauthorized message
+                            ulLeaves.empty();
+                            ulLeaves.append('<li style=color:red>' + jqXHR.status + '</li>');
+                        }
+                    },
+                    error: function (jqXHR) {
+                        var errmsg = jqXHR.responseText;
+                        ulLeaves.append('<li>' + errmsg + '</li>');
+                    }
+                });
+            });
+
+            $('#btnClear').click(function () {
+                ulLeaves.empty();
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <input type="text" id="txtUserName" />
+    <input type="password" id="txtPassword" />
+    <br />
+    <br />
+    <input id="btn" type="button" value="Authenticate and Get Leaves" />
+    <input id="btnClear" type="button" value="Clear" />
+    <ul id="ulLeaves"></ul>
+</body>
+</html>

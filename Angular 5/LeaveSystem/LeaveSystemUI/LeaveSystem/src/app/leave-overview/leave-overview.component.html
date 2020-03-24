@@ -1,0 +1,85 @@
+
+<div class="col-md-12">
+    <h2>Leave Overview</h2>
+    <div class="header">
+
+    </div>
+    <div class="table-responsive table-container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Employee</th>
+                    <th>Jan</th>
+                    <th>Feb</th>
+                    <th>Mar</th>
+                    <th>Apr</th>
+                    <th>May</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Aug</th>
+                    <th>Sep</th>
+                    <th>Oct</th>
+                    <th>Nov</th>
+                    <th>Dec</th>
+                    <th>Granted Leaves</th>
+                    <th>Availed Leaves</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let leave of leavesFromService">
+                    <td>{{leave.EmployeeName}}</td>
+                    <td class="bg-success" *ngIf="LeaveClass(leave.jan); else elseBlock"></td>
+                    <ng-template #elseBlock>
+                        <td class="bg-danger"></td>
+                    </ng-template>
+                    <td class="bg-success" *ngIf="LeaveClass(leave.feb); else elseBlock"></td>
+                    <ng-template #elseBlock>
+                        <td class="bg-danger"></td>
+                    </ng-template>
+                    <td class="bg-success" *ngIf="LeaveClass(leave.mar); else elseBlock"></td>
+                    <ng-template #elseBlock>
+                        <td class="bg-danger"></td>
+                    </ng-template>
+                    <td class="bg-success" *ngIf="LeaveClass(leave.apr); else elseBlock"></td>
+                    <ng-template #elseBlock>
+                        <td class="bg-danger"></td>
+                    </ng-template>
+                    <td class="bg-success" *ngIf="LeaveClass(leave.may); else elseBlock"></td>
+                    <ng-template #elseBlock>
+                        <td class="bg-danger"></td>
+                    </ng-template>
+                    <td class="bg-success" *ngIf="LeaveClass(leave.jun); else elseBlock"></td>
+                    <ng-template #elseBlock>
+                        <td class="bg-danger"></td>
+                    </ng-template>
+                    <td class="bg-success" *ngIf="LeaveClass(leave.jul); else elseBlock"></td>
+                    <ng-template #elseBlock>
+                        <td class="bg-danger"></td>
+                    </ng-template>
+                    <td class="bg-success" *ngIf="LeaveClass(leave.aug); else elseBlock"></td>
+                    <ng-template #elseBlock>
+                        <td class="bg-danger"></td>
+                    </ng-template>
+                    <td class="bg-success" *ngIf="LeaveClass(leave.sep); else elseBlock"></td>
+                    <ng-template #elseBlock>
+                        <td class="bg-danger"></td>
+                    </ng-template>
+                    <td class="bg-success" *ngIf="LeaveClass(leave.oct); else elseBlock"></td>
+                    <ng-template #elseBlock>
+                        <td class="bg-danger"></td>
+                    </ng-template>
+                    <td class="bg-success" *ngIf="LeaveClass(leave.nov); else elseBlock"></td>
+                    <ng-template #elseBlock>
+                        <td class="bg-danger"></td>
+                    </ng-template>
+                    <td class="bg-success" *ngIf="LeaveClass(leave.dec); else elseBlock"></td>
+                    <ng-template #elseBlock>
+                        <td class="bg-danger"></td>
+                    </ng-template>
+                    <td class="text-center">{{leave.GrantedLeaves}}</td>
+                    <td class="text-center">{{leave.AvailedLeaves}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

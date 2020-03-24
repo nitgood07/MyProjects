@@ -1,0 +1,25 @@
+<form>
+    
+    <div class="form-group">
+       <select (change)="ChangedValue($event.target.value)">
+           <option *ngFor="let lv of _leaveViewOptions">{{lv.name}}</option>
+       </select>     
+    </div>
+    <ng-container *ngIf="showMonth">
+        <div id="dvMonth" class="form-group" >
+            <label>Select a month: </label>
+            <select class="select" #myMonth (change)="ChangeMonth(myMonth.value)">
+                <option class="option" *ngFor="let mnth of _months" [value]="mnth.id">{{mnth.value}}</option>
+            </select>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf="showEmployee">
+        <div id="dvEmployee" class="form-group">
+            <label>Select an employee: </label>
+            <select (change)="ChangeEmployee($event.target.value)">
+                <option *ngFor="let emp of _employees" [value]="emp.id">{{emp.name}}</option>
+            </select>
+        </div>
+    </ng-container>
+</form>

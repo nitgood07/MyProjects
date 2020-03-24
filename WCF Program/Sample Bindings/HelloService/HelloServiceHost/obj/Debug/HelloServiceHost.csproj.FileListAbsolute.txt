@@ -1,0 +1,20 @@
+C:\Users\nitgo\Desktop\WCF Program\HelloService\HelloServiceHost\bin\Debug\HelloServiceHost.exe.config
+C:\Users\nitgo\Desktop\WCF Program\HelloService\HelloServiceHost\bin\Debug\HelloServiceHost.exe
+C:\Users\nitgo\Desktop\WCF Program\HelloService\HelloServiceHost\bin\Debug\HelloServiceHost.pdb
+C:\Users\nitgo\Desktop\WCF Program\HelloService\HelloServiceHost\bin\Debug\HelloService.dll
+C:\Users\nitgo\Desktop\WCF Program\HelloService\HelloServiceHost\bin\Debug\HelloService.pdb
+C:\Users\nitgo\Desktop\WCF Program\HelloService\HelloServiceHost\bin\Debug\HelloService.dll.config
+C:\Users\nitgo\Desktop\WCF Program\HelloService\HelloServiceHost\obj\Debug\HelloServiceHost.csprojAssemblyReference.cache
+C:\Users\nitgo\Desktop\WCF Program\HelloService\HelloServiceHost\obj\Debug\HelloServiceHost.csproj.CopyComplete
+C:\Users\nitgo\Desktop\WCF Program\HelloService\HelloServiceHost\obj\Debug\HelloServiceHost.exe
+C:\Users\nitgo\Desktop\WCF Program\HelloService\HelloServiceHost\obj\Debug\HelloServiceHost.pdb
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceHost\bin\Debug\HelloServiceHost.exe.config
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceHost\bin\Debug\HelloServiceHost.exe
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceHost\bin\Debug\HelloServiceHost.pdb
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceHost\bin\Debug\HelloService.dll
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceHost\bin\Debug\HelloService.pdb
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceHost\bin\Debug\HelloService.dll.config
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceHost\obj\Debug\HelloServiceHost.csprojAssemblyReference.cache
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceHost\obj\Debug\HelloServiceHost.csproj.CopyComplete
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceHost\obj\Debug\HelloServiceHost.exe
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceHost\obj\Debug\HelloServiceHost.pdb

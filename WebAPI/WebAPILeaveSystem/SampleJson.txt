@@ -1,0 +1,23 @@
+Create Record (POST) JSON
+----------------------
+{"Id":5,
+"EmployeeName":"Aditya",
+"EmployeeEmail":"Aditya@abc.com",
+"ManagerName":"Namita",
+"ManagerEmail":"namita.jain@abc.com",
+"FromDate":"2020-01-15T00:00:00",
+"ToDate":"2020-01-16T00:00:00",
+"ApprovalStatus":"N"}
+
+
+
+Update Record (PUT) JSON
+------------------------
+{"Id":5,
+"EmployeeName":"Aditya Nandan",
+"EmployeeEmail":"Aditya.Nandan@abc.com",
+"ManagerName":"Namita",
+"ManagerEmail":"namita.jain@abc.com",
+"FromDate":"2020-01-15T00:00:00",
+"ToDate":"2020-01-16T00:00:00",
+"ApprovalStatus":"N"}

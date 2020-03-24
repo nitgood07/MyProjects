@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Add To Do List Item</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="row">
+        <h2>Add To Do List Item</h2>
+        <div class="col col-md-6">
+            <table class="table table-bordered">
+                <tr>
+                    <td>Taks Description </td>
+                    <td><input type="text" id="txtDescription" placeholder="Add Task Description" /> </td>
+                </tr>
+                <tr>
+                    <td>Taks Status</td>
+                    <td>
+                        <select id="slcStatus">
+                            <option value="Open">Open</option>
+                            <option value="Completed">Completed</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn btn-success" value="Save Changes" id="btnSumit" /></td>
+                    <td><input type="button" class="btn btn-success" value="Back to List" id="btnBack" /></td>
+                </tr>
+            </table>
+        </div>
+      
+    </div>
+
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#btnSumit').click(function () {
+                 //lets call api using ajax
+                 $.ajax({
+                     url: 'api/todolist',
+                     method: 'POST',
+                     data: {
+                         Description: $('#txtDescription').val(),
+                         Status: $('#slcStatus :selected').text()
+                     },
+                    success: function (data) {
+                        //empty table before adding
+                        window.location.href = "ToDoList.html";
+                    },
+                    error: function (jqXHR) {
+                        //check for error code
+                        if (jqXHR.statusCode == "401") {
+                            alert("error");
+                        }
+                        else {
+                            //show errors
+                            alert(jqXHR.error);
+                        }
+                    },
+                });
+            });           
+
+            //find add button and invoke add new page.
+            $('#btnBack').click(function () {
+                window.location.href = "ToDoList.html";
+            });
+        });
+
+    </script>
+</body>
+</html>

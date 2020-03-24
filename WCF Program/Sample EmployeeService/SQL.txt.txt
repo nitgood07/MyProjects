@@ -1,0 +1,32 @@
+USE [MyDatabase]
+GO
+
+Create table [dbo].tblEmployee(
+	Id int  primary key Identity,
+	Name nvarchar(50) null,
+	Gender nvarchar(8) not null,
+	DateOfBirth datetime null
+	)
+
+	insert into tblEmployee values ('Mark','Male','10/10/1980')
+	insert into tblEmployee values ('Mary','Female','11/10/1980')
+	insert into tblEmployee values ('Hanery','Male','12/10/1980')
+
+	select * from tblEmployee
+
+	create procedure spGetEmployee
+	@Id int
+	as 
+	Begin
+		select Id, name, gender, dateofbirth from tblEmployee where Id = @Id
+	End
+
+
+	create procedure spSaveEmployee
+	@Name nvarchar(50),
+	@Gender nvarchar(8),
+	@DateOfBirth datetime
+	as 
+	Begin
+		Insert into tblEmployee values(@Name, @Gender, @DateOfBirth);
+	End

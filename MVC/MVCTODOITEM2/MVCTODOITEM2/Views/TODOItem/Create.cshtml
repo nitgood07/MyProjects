@@ -1,0 +1,46 @@
+﻿@model MVCTODOITEM2.Models.TODOItem
+
+@{
+    ViewBag.Title = "Create New TODO Item";
+}
+
+@using (Html.BeginForm("Create", "TODOItem", FormMethod.Post))
+{
+    <div class="row">
+        <h2>Create New TODO Item</h2>
+        <br />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="col col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+
+                    <table class="table table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(modelItem => Model.Description)
+                                </td>
+                                <td>
+                                    @Html.EditorFor(modelItem => Model.Description)
+                                    @Html.ValidationMessageFor(modelItem => Model.Description, "", new { @class = "text-danger" })
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.DisplayName("Status")
+                                </td>
+                                <td>
+                                    @Html.EditorFor(modelItem => Model.Status)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="text-center">
+                        <input type="submit" id="btnSubmit" class="btn btn-success" value="Add New" />
+                        <a href="@Url.Action("Index","TODOItem")" class="btn btn-success">Back to List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

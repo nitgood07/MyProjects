@@ -1,0 +1,9 @@
+C:\Users\nitgo\Desktop\WCF Program\Sample Concurrency Mode\Windows Client\Windows Client\bin\Debug\Windows Client.exe.config
+C:\Users\nitgo\Desktop\WCF Program\Sample Concurrency Mode\Windows Client\Windows Client\bin\Debug\Windows Client.exe
+C:\Users\nitgo\Desktop\WCF Program\Sample Concurrency Mode\Windows Client\Windows Client\bin\Debug\Windows Client.pdb
+C:\Users\nitgo\Desktop\WCF Program\Sample Concurrency Mode\Windows Client\Windows Client\obj\Debug\Windows Client.csprojAssemblyReference.cache
+C:\Users\nitgo\Desktop\WCF Program\Sample Concurrency Mode\Windows Client\Windows Client\obj\Debug\Windows_Client.Form1.resources
+C:\Users\nitgo\Desktop\WCF Program\Sample Concurrency Mode\Windows Client\Windows Client\obj\Debug\Windows_Client.Properties.Resources.resources
+C:\Users\nitgo\Desktop\WCF Program\Sample Concurrency Mode\Windows Client\Windows Client\obj\Debug\Windows Client.csproj.GenerateResource.cache
+C:\Users\nitgo\Desktop\WCF Program\Sample Concurrency Mode\Windows Client\Windows Client\obj\Debug\Windows Client.exe
+C:\Users\nitgo\Desktop\WCF Program\Sample Concurrency Mode\Windows Client\Windows Client\obj\Debug\Windows Client.pdb

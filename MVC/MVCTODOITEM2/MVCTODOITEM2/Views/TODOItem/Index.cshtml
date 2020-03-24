@@ -1,0 +1,55 @@
+﻿@model IEnumerable<MVCTODOITEM2.Models.TODOItem>
+
+@{
+    ViewBag.Title = "TODO List";
+}
+
+@using (Html.BeginForm("Edit", "TODOItem", FormMethod.Post))
+{
+    
+    <div class="row">
+        <h2>TODO List</h2>
+        <div class="col col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Description
+                                </th>
+                                <th>
+                                    Status
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--loop through model-->
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Description)
+                                    </td>
+                                    <td>
+                                        <!--add ID as hidden field-->
+                                        @Html.HiddenFor(modelItem => item.Id)
+                                        @Html.CheckBox("itemChk", false)
+                                        <!--Add remove capability-->
+                                        @Html.ActionLink("Remove", "Delete", new { id = item.Id })
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <div class="text-center">
+                        <a href="@Url.Action("Create","TODOItem")" class="btn btn-primary">Add New</a>
+                        <input type="submit" id="btnSubmit" class="btn btn-success" value="Save Changes" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+

@@ -1,0 +1,65 @@
+USE [MyDatabase]
+GO
+
+/****** Object:  Table [dbo].[Leaves]    Script Date: 2/10/2020 8:11:38 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Leaves](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[EmployeeName] [nvarchar](50) NULL,
+	[EmployeeEmail] [nvarchar](80) NOT NULL,
+	[ManagerName] [nvarchar](50) NULL,
+	[ManagerEmail] [nvarchar](80) NOT NULL,
+	[GrantedLeaves] [int] NULL,
+	[AvailedLeaves] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+
+
+
+create table [dbo].Leave_Requests(
+Id int primary key identity,
+StartDate date,
+EndDate date,
+Approved nvarchar(3),
+LeaveId int
+Foreign Key (LeaveId) References [dbo].Leaves(Id)
+)
+
+
+
+Create View GetAllLeaves as select LR.id, LR.StartDate, LR.EndDate, LR.Approved,LR.LeaveId,L.EmployeeName,
+L.EmployeeEmail,L.ManagerName,L.ManagerEmail,L.GrantedLeaves,L.AvailedLeaves 
+FROM [dbo].Leaves L LEFT JOIN [dbo].Leave_Requests LR ON L.ID = LR.LeaveId
+
+
+
+Create Procedure GetLeavesForAnEmployee 
+@EMP_ID as int
+AS
+select LR.id, LR.StartDate, LR.EndDate, LR.Approved,LR.LeaveId,L.EmployeeName,
+L.EmployeeEmail,L.ManagerName,L.ManagerEmail,L.GrantedLeaves,L.AvailedLeaves 
+FROM [dbo].Leaves L LEFT JOIN [dbo].Leave_Requests LR ON L.ID = LR.LeaveId
+Where LR.Id = @EMP_ID
+GO
+
+
+Create Procedure GetLeavesForAMonth 
+@Month as int
+AS
+select LR.id, LR.StartDate, LR.EndDate, LR.Approved,LR.LeaveId,L.EmployeeName,
+L.EmployeeEmail,L.ManagerName,L.ManagerEmail,L.GrantedLeaves,L.AvailedLeaves 
+FROM [dbo].Leaves L LEFT JOIN [dbo].Leave_Requests LR ON L.ID = LR.LeaveId
+Where Month(LR.StartDate) = @Month OR Month(LR.EndDate) = @Month; 
+GO

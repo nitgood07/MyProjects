@@ -1,0 +1,95 @@
+﻿Installing assembly 'C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.InstallLog
+   assemblypath = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe
+   logtoconsole = 
+Rolling back assembly 'C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.InstallLog
+   assemblypath = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe
+   logtoconsole = 
+Uninstalling assembly 'C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.InstallLog
+   assemblypath = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe
+Removing EventLog source HelloWindowsService.
+An exception occurred during the uninstallation of the System.Diagnostics.EventLogInstaller installer.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security, State.
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.InstallLog
+   assemblypath = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe
+   logtoconsole = 
+Rolling back assembly 'C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.InstallLog
+   assemblypath = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe
+   logtoconsole = 
+Installing assembly 'C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.InstallLog
+   assemblypath = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe
+   logtoconsole = 
+Installing service HelloWindowsService...
+Service HelloWindowsService has been successfully installed.
+Creating EventLog source HelloWindowsService in log Application...
+Committing assembly 'C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.InstallLog
+   assemblypath = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe
+   logtoconsole = 
+Uninstalling assembly 'C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.InstallLog
+   assemblypath = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe
+Removing EventLog source HelloWindowsService.
+Service HelloWindowsService is being removed from the system...
+Service HelloWindowsService was successfully removed from the system.
+Installing assembly 'C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.InstallLog
+   assemblypath = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe
+   logtoconsole = 
+Installing service HelloWindowsService...
+Creating EventLog source HelloWindowsService in log Application...
+Rolling back assembly 'C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.InstallLog
+   assemblypath = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe
+   logtoconsole = 
+Restoring event log to previous state for source HelloWindowsService.
+Installing assembly 'C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.InstallLog
+   assemblypath = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe
+   logtoconsole = 
+Installing service HelloWindowsService...
+Service HelloWindowsService has been successfully installed.
+Creating EventLog source HelloWindowsService in log Application...
+Committing assembly 'C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.InstallLog
+   assemblypath = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe
+   logtoconsole = 
+Uninstalling assembly 'C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.InstallLog
+   assemblypath = C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe
+Removing EventLog source HelloWindowsService.
+Service HelloWindowsService is being removed from the system...
+Service HelloWindowsService was successfully removed from the system.
+Attempt to stop service HelloWindowsService.

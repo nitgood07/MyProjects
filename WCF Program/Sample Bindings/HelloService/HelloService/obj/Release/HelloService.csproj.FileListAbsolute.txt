@@ -1,0 +1,6 @@
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloService\bin\Release\HelloService.dll.config
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloService\bin\Release\HelloService.dll
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloService\bin\Release\HelloService.pdb
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloService\obj\Release\HelloService.csprojAssemblyReference.cache
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloService\obj\Release\HelloService.dll
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloService\obj\Release\HelloService.pdb

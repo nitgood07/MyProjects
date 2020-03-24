@@ -1,0 +1,25 @@
+<p>New test page component 1 !</p>
+<h2>Hello {{name}}</h2>
+<h2>{{GreetUser()}}</h2>
+<!--property binding in angular-->
+<input type="text" [disabled]="isDisabled" value="Property Binding">
+<!--Another syntax for property binding-->
+<input type="text" bind-disabled="isDisabled2" value="Property Binding">
+
+<!--Another syntax for style class binding-->
+<h2 [ngClass]="messageClass"> Example of style class binding </h2>
+
+
+<!--Syntax for style binding-->
+<h2 [style.color]="styleSetColor"> Example of style binding1 </h2>
+
+<h2 [ngStyle]="styleClass"> Example of style binding 2</h2>
+
+<!--Event binding-->
+<button (click)="OnClick($event)">Hit me to test</button>
+
+<br>
+<!--Template Reference variables-->
+<input #refInput type="text" value="write something" id="temp">
+<button (click)="logMessage(refInput.value)">Log Message</button>
+<button (click)="logMessage(refInput)">Log Message2</button>

@@ -1,0 +1,10 @@
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceIISHost\bin\HelloServiceIISHost.dll.config
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceIISHost\bin\HelloServiceIISHost.dll
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceIISHost\bin\HelloServiceIISHost.pdb
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceIISHost\bin\HelloService.dll
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceIISHost\bin\HelloService.pdb
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceIISHost\bin\HelloService.dll.config
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceIISHost\obj\Release\HelloServiceIISHost.csprojAssemblyReference.cache
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceIISHost\obj\Release\HelloServiceIISHost.csproj.CopyComplete
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceIISHost\obj\Release\HelloServiceIISHost.dll
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceIISHost\obj\Release\HelloServiceIISHost.pdb

@@ -1,0 +1,12 @@
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe.config
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.pdb
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloService.dll
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloService.pdb
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloService.dll.config
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\obj\Debug\HelloServiceWindowsServiceHost.csprojAssemblyReference.cache
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\obj\Debug\HelloServiceWindowsServiceHost.ProjectInstaller.resources
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\obj\Debug\HelloServiceWindowsServiceHost.csproj.GenerateResource.cache
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\obj\Debug\HelloServiceWindowsServiceHost.csproj.CopyComplete
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\obj\Debug\HelloServiceWindowsServiceHost.exe
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\obj\Debug\HelloServiceWindowsServiceHost.pdb

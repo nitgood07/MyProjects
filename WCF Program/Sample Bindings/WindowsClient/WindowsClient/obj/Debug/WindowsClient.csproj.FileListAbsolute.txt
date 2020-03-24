@@ -1,0 +1,18 @@
+C:\Users\nitgo\Desktop\WCF Program\WindowsClient\WindowsClient\bin\Debug\WindowsClient.exe.config
+C:\Users\nitgo\Desktop\WCF Program\WindowsClient\WindowsClient\bin\Debug\WindowsClient.exe
+C:\Users\nitgo\Desktop\WCF Program\WindowsClient\WindowsClient\bin\Debug\WindowsClient.pdb
+C:\Users\nitgo\Desktop\WCF Program\WindowsClient\WindowsClient\obj\Debug\WindowsClient.csprojAssemblyReference.cache
+C:\Users\nitgo\Desktop\WCF Program\WindowsClient\WindowsClient\obj\Debug\WindowsClient.Form1.resources
+C:\Users\nitgo\Desktop\WCF Program\WindowsClient\WindowsClient\obj\Debug\WindowsClient.Properties.Resources.resources
+C:\Users\nitgo\Desktop\WCF Program\WindowsClient\WindowsClient\obj\Debug\WindowsClient.csproj.GenerateResource.cache
+C:\Users\nitgo\Desktop\WCF Program\WindowsClient\WindowsClient\obj\Debug\WindowsClient.exe
+C:\Users\nitgo\Desktop\WCF Program\WindowsClient\WindowsClient\obj\Debug\WindowsClient.pdb
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\WindowsClient\WindowsClient\bin\Debug\WindowsClient.exe.config
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\WindowsClient\WindowsClient\bin\Debug\WindowsClient.exe
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\WindowsClient\WindowsClient\bin\Debug\WindowsClient.pdb
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\WindowsClient\WindowsClient\obj\Debug\WindowsClient.csprojAssemblyReference.cache
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\WindowsClient\WindowsClient\obj\Debug\WindowsClient.Form1.resources
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\WindowsClient\WindowsClient\obj\Debug\WindowsClient.Properties.Resources.resources
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\WindowsClient\WindowsClient\obj\Debug\WindowsClient.csproj.GenerateResource.cache
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\WindowsClient\WindowsClient\obj\Debug\WindowsClient.exe
+C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\WindowsClient\WindowsClient\obj\Debug\WindowsClient.pdb

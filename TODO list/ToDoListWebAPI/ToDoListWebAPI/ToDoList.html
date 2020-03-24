@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My To Do List</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <div class="row">
+        <h2>My To Do List</h2>
+        <div class="col col-md-6">
+            <div class="panel panel-primary list-panel" id="list-panel">
+                <table class="table table-striped table-bordered" style="width:100%" id="tblTask">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblBody"></tbody>
+                </table>
+                <div class="panel-footer">
+                    <input type="button" class="btn btn-success" value="Save Changes" id="btnSave" />
+                    <input type="button" id="btnAdd" class="btn btn-success" value="Add New" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                url: 'api/todolist',
+                method: 'GET',
+                success: function (data) {
+                    //empty table before adding 
+                    $('#tblBody').empty();
+                    
+                    //loop thru all tasks and render on page
+                    $.each(data, function (index, val) {
+                        var row = $('<tr><td>' + val.Description + '</td><td>'
+                            + '<input type="checkbox" id="chkStatus" />  '
+                            + '<input type="hidden" id="dr" value="' + val.Id + '" />'
+                            + '<input type="button" class="delete_class" value="Remove" />'
+                            +'</td > < tr>');
+
+                        $('#tblBody').append(row);
+                    });
+                },
+                error: function (jqXHR) {
+                    //check for error code
+                    if (jqXHR.statusCode == "401") {
+                        alert("error");
+                    }
+                    else {
+                        //show errors
+                        alert("error");
+                    }
+                },
+            });
+
+             //remove button
+            $(document).on('click','.delete_class',function () {
+                var id = $(this).closest("tr").find('#dr').val();
+               $.ajax({
+                    url: 'api/todolist/delete/'+ id,
+                    method: 'DELETE',
+                   success: function (data) {
+                       window.location.href = "ToDoList.html";
+                   },
+                    error: function (jqXHR) { },
+                }); 
+            });
+
+           //find add button and invoke add new page.
+            $('#btnAdd').click(function () {
+                window.location.href = "AddNew.html";
+            });
+        });
+    </script>
+</body>
+</html>

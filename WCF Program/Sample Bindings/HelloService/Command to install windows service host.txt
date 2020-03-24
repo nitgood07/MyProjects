@@ -1,0 +1,4 @@
+Need to open .NET command prompt as admin
+-------------------------------------------
+
+installutil -u "C:\Users\nitgo\Desktop\WCF Program\Sample Bindings\HelloService\HelloServiceWindowsServiceHost\bin\Debug\HelloServiceWindowsServiceHost.exe"

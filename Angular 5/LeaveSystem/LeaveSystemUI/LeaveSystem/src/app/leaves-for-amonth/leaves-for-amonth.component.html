@@ -1,0 +1,37 @@
+
+<div class="col-md-12">
+    <h2>Leaves For A Month</h2>
+    <div class="header">
+
+    </div>
+    <div class="table-responsive table-container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Employee</th>
+                    <th>Employee Email</th>
+                    <th>Leave Start Date</th>
+                    <th>Leave End Date</th>
+                    <th>Approved?</th>
+                    <th>Manager Name</th>
+                    <th>Manager Email</th>
+                    <th>Total Granted Leaves</th>
+                    <th>Total Availed Leaves</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let leave of leavesFromService">
+                    <td class="text-center">{{leave.EmployeeName}}</td>
+                    <td class="text-center">{{leave.EmployeeEmail}}</td>
+                    <td class="text-center">{{leave.StartDate}}</td>
+                    <td class="text-center">{{leave.EndDate}}</td>
+                    <td class="text-center">{{leave.Approved}}</td>
+                    <td class="text-center">{{leave.ManagerName}}</td>
+                    <td class="text-center">{{leave.ManagerEmail}}</td>
+                    <td class="text-center">{{leave.GrantedLeaves}}</td>
+                    <td class="text-center">{{leave.AvailedLeaves}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

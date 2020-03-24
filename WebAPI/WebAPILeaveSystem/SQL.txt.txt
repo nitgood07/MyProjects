@@ -1,0 +1,29 @@
+USE [MyDatabase]
+GO
+
+Create table [dbo].Leaves(
+	Id int  primary key Identity,
+	EmployeeName nvarchar(50) null,
+	EmployeeEmail nvarchar(80) not null,
+	ManagerName nvarchar(50) null,
+	ManagerEmail nvarchar(80) not null,
+	FromDate Date,
+	ToDate date,
+	ApprovalStatus nvarchar(5) not null
+)
+
+Go
+
+Insert into dbo.Leaves values('Nitin','nitin.gupta@abc.com','Namita','namita.jain@abc.com', '2020-01-10','2020-01-12','N')
+Insert into dbo.Leaves values('Ramesh','Ramesh.kolachana@abc.com','Namita','namita.jain@abc.com', '2020-02-10','2020-02-15','N')
+Insert into dbo.Leaves values('Praveen','praveen.anugula@abc.com','Namita','namita.jain@abc.com', '2020-02-02','2020-02-05','N')
+Insert into dbo.Leaves values('Sunil','sunil.saini@abc.com','Namita','namita.jain@abc.com', '2020-03-27','2020-03-30','N')
+
+Create table [dbo].Users(
+	Id int  primary key Identity,
+	Username nvarchar(50) not null,
+	Password nvarchar(50) not null
+)
+
+insert into dbo.Users values ('employee', 'employee')
+insert into dbo.Users values ('manager', 'manager')

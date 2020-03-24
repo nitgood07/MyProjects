@@ -1,0 +1,6 @@
+C:\Users\nitgo\Desktop\WCF Program\Sample Concurrency Mode\SimpleService\SimpleService\bin\Debug\SimpleService.dll.config
+C:\Users\nitgo\Desktop\WCF Program\Sample Concurrency Mode\SimpleService\SimpleService\bin\Debug\SimpleService.dll
+C:\Users\nitgo\Desktop\WCF Program\Sample Concurrency Mode\SimpleService\SimpleService\bin\Debug\SimpleService.pdb
+C:\Users\nitgo\Desktop\WCF Program\Sample Concurrency Mode\SimpleService\SimpleService\obj\Debug\SimpleService.csprojAssemblyReference.cache
+C:\Users\nitgo\Desktop\WCF Program\Sample Concurrency Mode\SimpleService\SimpleService\obj\Debug\SimpleService.dll
+C:\Users\nitgo\Desktop\WCF Program\Sample Concurrency Mode\SimpleService\SimpleService\obj\Debug\SimpleService.pdb

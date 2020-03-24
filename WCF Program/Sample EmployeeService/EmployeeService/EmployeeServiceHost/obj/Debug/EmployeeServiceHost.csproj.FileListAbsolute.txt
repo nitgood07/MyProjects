@@ -1,0 +1,10 @@
+C:\Users\nitgo\Desktop\WCF Program\Sample EmployeeService\EmployeeService\EmployeeServiceHost\bin\Debug\EmployeeServiceHost.exe.config
+C:\Users\nitgo\Desktop\WCF Program\Sample EmployeeService\EmployeeService\EmployeeServiceHost\bin\Debug\EmployeeServiceHost.exe
+C:\Users\nitgo\Desktop\WCF Program\Sample EmployeeService\EmployeeService\EmployeeServiceHost\bin\Debug\EmployeeServiceHost.pdb
+C:\Users\nitgo\Desktop\WCF Program\Sample EmployeeService\EmployeeService\EmployeeServiceHost\bin\Debug\EmployeeService.dll
+C:\Users\nitgo\Desktop\WCF Program\Sample EmployeeService\EmployeeService\EmployeeServiceHost\bin\Debug\EmployeeService.pdb
+C:\Users\nitgo\Desktop\WCF Program\Sample EmployeeService\EmployeeService\EmployeeServiceHost\bin\Debug\EmployeeService.dll.config
+C:\Users\nitgo\Desktop\WCF Program\Sample EmployeeService\EmployeeService\EmployeeServiceHost\obj\Debug\EmployeeServiceHost.csprojAssemblyReference.cache
+C:\Users\nitgo\Desktop\WCF Program\Sample EmployeeService\EmployeeService\EmployeeServiceHost\obj\Debug\EmployeeServiceHost.csproj.CopyComplete
+C:\Users\nitgo\Desktop\WCF Program\Sample EmployeeService\EmployeeService\EmployeeServiceHost\obj\Debug\EmployeeServiceHost.exe
+C:\Users\nitgo\Desktop\WCF Program\Sample EmployeeService\EmployeeService\EmployeeServiceHost\obj\Debug\EmployeeServiceHost.pdb

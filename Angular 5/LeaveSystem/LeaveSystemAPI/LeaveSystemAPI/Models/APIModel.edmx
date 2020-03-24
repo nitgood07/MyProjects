@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="APIDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Leave_Requests">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartDate" Type="date" />
+          <Property Name="EndDate" Type="date" />
+          <Property Name="Approved" Type="nvarchar" MaxLength="3" />
+          <Property Name="LeaveId" Type="int" />
+        </EntityType>
+        <EntityType Name="Leaves">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeName" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmployeeEmail" Type="nvarchar" MaxLength="80" Nullable="false" />
+          <Property Name="ManagerName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ManagerEmail" Type="nvarchar" MaxLength="80" Nullable="false" />
+          <Property Name="GrantedLeaves" Type="int" />
+          <Property Name="AvailedLeaves" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'MyDatabase.dbo.GetAllLeaves' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="GetAllLeaves">
+          <Key>
+            <PropertyRef Name="EmployeeEmail" />
+            <PropertyRef Name="ManagerEmail" />
+          </Key>
+          <Property Name="id" Type="int" />
+          <Property Name="StartDate" Type="date" />
+          <Property Name="EndDate" Type="date" />
+          <Property Name="Approved" Type="nvarchar" MaxLength="3" />
+          <Property Name="LeaveId" Type="int" />
+          <Property Name="EmployeeName" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmployeeEmail" Type="nvarchar" MaxLength="80" Nullable="false" />
+          <Property Name="ManagerName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ManagerEmail" Type="nvarchar" MaxLength="80" Nullable="false" />
+          <Property Name="GrantedLeaves" Type="int" />
+          <Property Name="AvailedLeaves" Type="int" />
+        </EntityType>
+        <Association Name="FK__Leave_Req__Leave__3C34F16F">
+          <End Role="Leaves" Type="Self.Leaves" Multiplicity="0..1" />
+          <End Role="Leave_Requests" Type="Self.Leave_Requests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Leaves">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Leave_Requests">
+              <PropertyRef Name="LeaveId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="GetLeavesForAMonth" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Month" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetLeavesForAnEmployee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="EMP_ID" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="APIDBModelStoreContainer">
+          <EntitySet Name="Leave_Requests" EntityType="Self.Leave_Requests" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Leaves" EntityType="Self.Leaves" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GetAllLeaves" EntityType="Self.GetAllLeaves" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [GetAllLeaves].[id] AS [id], 
+    [GetAllLeaves].[StartDate] AS [StartDate], 
+    [GetAllLeaves].[EndDate] AS [EndDate], 
+    [GetAllLeaves].[Approved] AS [Approved], 
+    [GetAllLeaves].[LeaveId] AS [LeaveId], 
+    [GetAllLeaves].[EmployeeName] AS [EmployeeName], 
+    [GetAllLeaves].[EmployeeEmail] AS [EmployeeEmail], 
+    [GetAllLeaves].[ManagerName] AS [ManagerName], 
+    [GetAllLeaves].[ManagerEmail] AS [ManagerEmail], 
+    [GetAllLeaves].[GrantedLeaves] AS [GrantedLeaves], 
+    [GetAllLeaves].[AvailedLeaves] AS [AvailedLeaves]
+    FROM [dbo].[GetAllLeaves] AS [GetAllLeaves]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK__Leave_Req__Leave__3C34F16F" Association="Self.FK__Leave_Req__Leave__3C34F16F">
+            <End Role="Leaves" EntitySet="Leaves" />
+            <End Role="Leave_Requests" EntitySet="Leave_Requests" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="APIDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Leave_Requests">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartDate" Type="DateTime" Precision="0" />
+          <Property Name="EndDate" Type="DateTime" Precision="0" />
+          <Property Name="Approved" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="LeaveId" Type="Int32" />
+          <NavigationProperty Name="Leaf" Relationship="Self.FK__Leave_Req__Leave__3C34F16F" FromRole="Leave_Requests" ToRole="Leaves" />
+        </EntityType>
+        <EntityType Name="Leaf">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EmployeeEmail" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ManagerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ManagerEmail" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GrantedLeaves" Type="Int32" />
+          <Property Name="AvailedLeaves" Type="Int32" />
+          <NavigationProperty Name="Leave_Requests" Relationship="Self.FK__Leave_Req__Leave__3C34F16F" FromRole="Leaves" ToRole="Leave_Requests" />
+        </EntityType>
+        <Association Name="FK__Leave_Req__Leave__3C34F16F">
+          <End Role="Leaves" Type="Self.Leaf" Multiplicity="0..1" />
+          <End Role="Leave_Requests" Type="Self.Leave_Requests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Leaves">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Leave_Requests">
+              <PropertyRef Name="LeaveId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="APIModelEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Leave_Requests" EntityType="Self.Leave_Requests" />
+          <EntitySet Name="Leaves" EntityType="Self.Leaf" />
+          <AssociationSet Name="FK__Leave_Req__Leave__3C34F16F" Association="Self.FK__Leave_Req__Leave__3C34F16F">
+            <End Role="Leaves" EntitySet="Leaves" />
+            <End Role="Leave_Requests" EntitySet="Leave_Requests" />
+          </AssociationSet>
+          <EntitySet Name="GetAllLeaves" EntityType="APIDBModel.GetAllLeaf" />
+          <FunctionImport Name="GetLeavesForAMonth" ReturnType="Collection(APIDBModel.GetLeavesForAMonth_Result)">
+          <Parameter Name="Month" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetLeavesForAnEmployee" ReturnType="Collection(APIDBModel.GetLeavesForAnEmployee_Result)">
+          <Parameter Name="EMP_ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="GetAllLeaf">
+          <Key>
+            <PropertyRef Name="EmployeeEmail" />
+            <PropertyRef Name="ManagerEmail" />
+          </Key>
+          <Property Name="id" Type="Int32" />
+          <Property Name="StartDate" Type="DateTime" Precision="0" />
+          <Property Name="EndDate" Type="DateTime" Precision="0" />
+          <Property Name="Approved" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="LeaveId" Type="Int32" />
+          <Property Name="EmployeeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EmployeeEmail" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="ManagerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ManagerEmail" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="GrantedLeaves" Type="Int32" />
+          <Property Name="AvailedLeaves" Type="Int32" />
+        </EntityType>
+        <ComplexType Name="GetLeavesForAMonth_Result">
+          <Property Type="Int32" Name="id" Nullable="true" />
+          <Property Type="DateTime" Name="StartDate" Nullable="true" />
+          <Property Type="DateTime" Name="EndDate" Nullable="true" />
+          <Property Type="String" Name="Approved" Nullable="true" MaxLength="3" />
+          <Property Type="Int32" Name="LeaveId" Nullable="true" />
+          <Property Type="String" Name="EmployeeName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="EmployeeEmail" Nullable="false" MaxLength="80" />
+          <Property Type="String" Name="ManagerName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ManagerEmail" Nullable="false" MaxLength="80" />
+          <Property Type="Int32" Name="GrantedLeaves" Nullable="true" />
+          <Property Type="Int32" Name="AvailedLeaves" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="GetLeavesForAnEmployee_Result">
+          <Property Type="Int32" Name="id" Nullable="true" />
+          <Property Type="DateTime" Name="StartDate" Nullable="true" />
+          <Property Type="DateTime" Name="EndDate" Nullable="true" />
+          <Property Type="String" Name="Approved" Nullable="true" MaxLength="3" />
+          <Property Type="Int32" Name="LeaveId" Nullable="true" />
+          <Property Type="String" Name="EmployeeName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="EmployeeEmail" Nullable="false" MaxLength="80" />
+          <Property Type="String" Name="ManagerName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ManagerEmail" Nullable="false" MaxLength="80" />
+          <Property Type="Int32" Name="GrantedLeaves" Nullable="true" />
+          <Property Type="Int32" Name="AvailedLeaves" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="APIDBModelStoreContainer" CdmEntityContainer="APIModelEntities">
+          <EntitySetMapping Name="Leave_Requests">
+            <EntityTypeMapping TypeName="APIDBModel.Leave_Requests">
+              <MappingFragment StoreEntitySet="Leave_Requests">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="Approved" ColumnName="Approved" />
+                <ScalarProperty Name="LeaveId" ColumnName="LeaveId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Leaves">
+            <EntityTypeMapping TypeName="APIDBModel.Leaf">
+              <MappingFragment StoreEntitySet="Leaves">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+                <ScalarProperty Name="EmployeeEmail" ColumnName="EmployeeEmail" />
+                <ScalarProperty Name="ManagerName" ColumnName="ManagerName" />
+                <ScalarProperty Name="ManagerEmail" ColumnName="ManagerEmail" />
+                <ScalarProperty Name="GrantedLeaves" ColumnName="GrantedLeaves" />
+                <ScalarProperty Name="AvailedLeaves" ColumnName="AvailedLeaves" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GetAllLeaves">
+            <EntityTypeMapping TypeName="APIDBModel.GetAllLeaf">
+              <MappingFragment StoreEntitySet="GetAllLeaves">
+                <ScalarProperty Name="AvailedLeaves" ColumnName="AvailedLeaves" />
+                <ScalarProperty Name="GrantedLeaves" ColumnName="GrantedLeaves" />
+                <ScalarProperty Name="ManagerEmail" ColumnName="ManagerEmail" />
+                <ScalarProperty Name="ManagerName" ColumnName="ManagerName" />
+                <ScalarProperty Name="EmployeeEmail" ColumnName="EmployeeEmail" />
+                <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+                <ScalarProperty Name="LeaveId" ColumnName="LeaveId" />
+                <ScalarProperty Name="Approved" ColumnName="Approved" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetLeavesForAMonth" FunctionName="APIDBModel.Store.GetLeavesForAMonth">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="APIDBModel.GetLeavesForAMonth_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="Approved" ColumnName="Approved" />
+                <ScalarProperty Name="LeaveId" ColumnName="LeaveId" />
+                <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+                <ScalarProperty Name="EmployeeEmail" ColumnName="EmployeeEmail" />
+                <ScalarProperty Name="ManagerName" ColumnName="ManagerName" />
+                <ScalarProperty Name="ManagerEmail" ColumnName="ManagerEmail" />
+                <ScalarProperty Name="GrantedLeaves" ColumnName="GrantedLeaves" />
+                <ScalarProperty Name="AvailedLeaves" ColumnName="AvailedLeaves" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetLeavesForAnEmployee" FunctionName="APIDBModel.Store.GetLeavesForAnEmployee">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="APIDBModel.GetLeavesForAnEmployee_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="Approved" ColumnName="Approved" />
+                <ScalarProperty Name="LeaveId" ColumnName="LeaveId" />
+                <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+                <ScalarProperty Name="EmployeeEmail" ColumnName="EmployeeEmail" />
+                <ScalarProperty Name="ManagerName" ColumnName="ManagerName" />
+                <ScalarProperty Name="ManagerEmail" ColumnName="ManagerEmail" />
+                <ScalarProperty Name="GrantedLeaves" ColumnName="GrantedLeaves" />
+                <ScalarProperty Name="AvailedLeaves" ColumnName="AvailedLeaves" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

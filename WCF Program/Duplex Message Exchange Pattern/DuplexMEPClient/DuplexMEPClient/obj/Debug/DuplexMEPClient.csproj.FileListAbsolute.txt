@@ -1,0 +1,9 @@
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMEPClient\DuplexMEPClient\bin\Debug\DuplexMEPClient.exe.config
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMEPClient\DuplexMEPClient\bin\Debug\DuplexMEPClient.exe
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMEPClient\DuplexMEPClient\bin\Debug\DuplexMEPClient.pdb
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMEPClient\DuplexMEPClient\obj\Debug\DuplexMEPClient.csprojAssemblyReference.cache
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMEPClient\DuplexMEPClient\obj\Debug\DuplexMEPClient.Form1.resources
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMEPClient\DuplexMEPClient\obj\Debug\DuplexMEPClient.Properties.Resources.resources
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMEPClient\DuplexMEPClient\obj\Debug\DuplexMEPClient.csproj.GenerateResource.cache
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMEPClient\DuplexMEPClient\obj\Debug\DuplexMEPClient.exe
+C:\Users\nitgo\Desktop\WCF Program\Duplex Message Exchange Pattern\DuplexMEPClient\DuplexMEPClient\obj\Debug\DuplexMEPClient.pdb
